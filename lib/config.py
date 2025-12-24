@@ -1,0 +1,27 @@
+# lib/config.py
+
+# --- CẤU HÌNH TÁCH SILK ---
+STRICT_BUFFER = 1.5
+SEED_MIN_SIZE = 15
+FRANGI_SCALE = (1, 3)
+FRANGI_BETA = 0.5
+RIDGE_LOW_THRESH = 40
+RIDGE_MIN_SIZE = 20
+TOPHAT_KERNEL = 15
+FINAL_MIN_SIZE = 50
+MASK_DILATE_ITER = 2      # Nở to để tạo Seed sạch
+
+MIN_ECCENTRICITY = 0.8    # Tham số bắt buộc cho silk.py
+MAX_SOLDER_DIA = 20
+
+# --- CẤU HÌNH TÁCH SOLDER ---
+TOPHAT_KERNEL_SIZE = 55   # Kernel lớn giữ khối tản nhiệt
+SOLDER_THRESH_VAL = 25    
+TRACE_REMOVAL_KERNEL = 9  # Xóa dây dẫn mảnh < 9px
+
+# --- BỘ LỌC HÌNH DÁNG ---
+SOLDER_MIN_SIZE = 15        
+SOLDER_MAX_SIZE = 40000         
+SOLDER_MIN_CIRCULARITY = 0.2    
+SOLDER_MAX_ASPECT_RATIO = 6   
+SOLDER_MIN_SOLIDITY = 0.55
